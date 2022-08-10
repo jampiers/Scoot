@@ -10,6 +10,11 @@ html {
     box-sizing: inherit;
 }
 
+[class$="__contenedor"] { 
+    max-width: 111rem;
+    margin: 0 auto;
+}
+
   
 body {
     font-family: v.$fontBody;
@@ -18,8 +23,6 @@ body {
     line-height: 2.5rem;
     font-weight: 400;
     overflow-x: hidden;
-    max-width: 144rem;
-    margin: 0 auto;
 
     &[data-scroll="false"] {
         overflow: hidden;
@@ -28,6 +31,10 @@ body {
             overflow-y: auto;
         }
     }
+}
+
+p {
+    margin: 0;
 }
 
 
@@ -40,7 +47,7 @@ img {
     display: block;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     margin: 0;
     font-family: v.$fontHeading;
     color: v.$darkNavy;
@@ -73,9 +80,15 @@ h2 {
 }
 
 h3 {
-    font-size: 4rem;
-    letter-spacing: -1.78px;
-    line-height: 4.8rem;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -1.07px;
+
+    @include m.tablet { 
+        font-size: 4rem;
+        letter-spacing: -1.79px;
+        line-height: 4.8rem;   
+    }
 }
 
 h4 {
@@ -90,6 +103,12 @@ h4 {
     }
 }
 
+h5 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -1.07px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -102,5 +121,11 @@ button {
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+details {
+    summary {
+        list-style: none;
     }
 }

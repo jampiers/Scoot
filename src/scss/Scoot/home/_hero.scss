@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 65rem;
-    position: relative;
     overflow-x: hidden;
+    position: relative;
 
     &::before {
         content: '';
@@ -59,6 +59,10 @@
         background-image: url(../img/home-hero-desktop.jpg);
     }
 
+    &__contenedor {
+        position: relative;
+    }
+
     &__contenido {
         position: absolute;
         top: 11.5rem;
@@ -91,7 +95,7 @@
             width: 50.2rem;
             height: 35rem;
             top: 15rem;
-            left: 16.5rem; 
+            left: 0; 
             margin: 0;
             text-align: left;  
         }
@@ -118,6 +122,11 @@
             display: block;
             position:absolute;
             bottom: 29rem;
+            left: -13rem;
+        }
+
+        @include m.desktop-xl { 
+            left: 0;
         }
     }
 

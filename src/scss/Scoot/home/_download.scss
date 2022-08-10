@@ -19,12 +19,10 @@
     }
 
     @include m.desktop-xl { 
-        background-position: 42rem bottom;
+        background-position: 44.2rem bottom;
     }
 
     &__contenido {
-        max-width: 111rem;
-        margin: 0 auto;
         text-align: center;
         display: flex;
         flex-direction: column;

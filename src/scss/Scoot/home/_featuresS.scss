@@ -4,6 +4,8 @@
 .features-s {
     padding: 12rem 0;
     position: relative;
+    max-width: 144rem;
+    margin: 0 auto;
 
     @include m.desktop {
         padding: 16rem 0 20rem 0; 
@@ -29,8 +31,8 @@
         justify-items: center;
         max-width: 31.1rem;
         height: 79.2rem;
-        margin: 0 auto;
         position: relative;
+        margin: 0 auto;
 
         &::after {
             @include m.tablet { 
@@ -56,7 +58,7 @@
         }
 
         @include m.desktop { 
-            max-width: 111rem;
+            max-width: max-content;
             height: 29.1rem;
             @include m.grid(3, 3rem);
         }

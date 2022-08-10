@@ -109,6 +109,7 @@
     @include m.tablet { 
         flex-direction: row;
         align-items: center;
+        gap: 3.2rem;
     }
 
     &__enlace {
