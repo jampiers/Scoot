@@ -93,6 +93,9 @@
         width: 5.6rem;
         height: 5.6rem;
         margin: auto;
+        animation-name: updown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
 
         @include m.tablet { 
             width: 9.6rem;

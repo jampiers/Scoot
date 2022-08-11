@@ -40,6 +40,10 @@ p {
 
 a {
     text-decoration: none;
+
+    &:focus {
+        outline: v.$yellow dotted 3px;
+    }
 }
 
 img {

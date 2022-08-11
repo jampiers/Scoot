@@ -49,4 +49,17 @@
             padding-inline: 0;
         }
     }
+
+    &--careers,
+    &--locations {
+        background-image: url(../img/careers-location-hero-mobile.jpg);
+
+        @include m.tablet { 
+            background-image: url(../img/careers-locations-hero-tablet.jpg);
+        }
+
+        @include m.desktop { 
+            background-image: url(../img/careers-locations-hero-desktop.jpg);
+        }
+    }
 }

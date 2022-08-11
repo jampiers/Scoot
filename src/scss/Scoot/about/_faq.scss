@@ -23,7 +23,8 @@
     padding-inline: 3.2rem;
 
     @include m.tablet { 
-        gap: 6.4rem;   
+        gap: 6.4rem;
+        padding-inline: 3.9rem;   
     }
 
     @include m.desktop { 

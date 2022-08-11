@@ -60,6 +60,10 @@
         background-color: transparent;
         color: $color;
     }
+
+    &:focus {
+        outline: v.$yellow dotted 3px;
+    }
 }
 
 @mixin grid($columnas, $espaciado ) {

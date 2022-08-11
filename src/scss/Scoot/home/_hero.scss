@@ -20,6 +20,9 @@
         position: absolute;
         left: -31.2rem;
         bottom: 3.45rem;
+        animation-name: updown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
 
         @include m.tablet { 
             bottom: 3.9rem;
@@ -123,6 +126,9 @@
             position:absolute;
             bottom: 29rem;
             left: -13rem;
+            animation-name: updown;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
 
         @include m.desktop-xl { 

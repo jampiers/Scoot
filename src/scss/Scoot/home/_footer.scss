@@ -82,3 +82,13 @@
         }
     }
 }
+
+.autor {
+    text-align: center;
+    color: v.$white;
+    font-size: 1rem;
+
+    span {
+        font-style: italic;
+    }
+}
